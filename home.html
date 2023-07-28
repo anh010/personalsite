@@ -3,15 +3,50 @@
     <head>
         <!-- head definitions go here -->
         <title>Alex Hernandez</title>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <!-- naviagtion bar -->
-        <nav> about education skills projects contact</nav>
-        <!-- about section  -->
+        <section id="about_me">
+            
+            <nav class="navbar"> 
+                <div class="personal_logo">Alex </div>
+                <ul class="nav__link--list">
+                    <li>
+                        <a href="#" class="
+                            nav__link--anchor
+                            link__hover-effect
+                            link__hover--black
+                            "> Education </a>
+                    </li>
+                    <li>
+                        <a href="#" class="
+                            nav__link--anchor
+                            link__hover-effect
+                            link__hover--black
+                            "> Skills </a>
+                    </li>
+                    <li>
+                        <a href="#" class="
+                            nav__link--anchor
+                            link__hover-effect
+                            link__hover--black
+                            "> Projects </a>  
+                    </li>
+                    <li>
+                        <a href="#" class="
+                            nav__link--anchor
+                            nav__link--anchor-primary
+                            "> Contact</a>
+                    </li>
+                </ul>
+                </nav>
+            <!-- about section  -->
+        </section>
         <section>
-                <h1> Hello </h1>
-                <h2> My name is Alex Hernandez Perez</h2>
+                <h1> Hello! I'm Alex Hernandez Perez</h1>
                  <!-- <img src"" alt="picture of me"> -->
                 <p> I'm a recent Computer Engineering graduate from UCSD. With a strong skill set in 
                     simple web development and digital design using System Verilog ready 
@@ -24,7 +59,7 @@
                     <tr>
                         <td>linkin account here</td>
                         <td>git hub account here </td>
-                        <td> mail contanct here</td> 
+                        <td> mail contact here</td> 
                     </tr>
                 </table>
         </section>
@@ -70,17 +105,14 @@
         <!-- Contact me section -->
         <section> 
             <h1>Contact Me</h1>
-         <form>
-            <label for="fname">Name:</label><br>
-            <input type="text" id="fname" name="fname" ><br>
-            <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email" ><br>
-            <label for="msg">Message:</label><br>
-            <textarea id="msg" rows="4" cols="50"></textarea>
-            <br>
+            <form action="https://formsubmit.co/alexhernandezp9115@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New contact!">
+                <input type="text"  name="Name"  placeholder="Name" required><br>
+                <input type="email" name="Email" placeholder="Email" required><br>
+                <textarea name="Message" placeholder="Message"></textarea><br>
 
-            <input type="submit" value="Submit">
-         </form>
+                <button type="submit">Send</button>
+           </form> 
         </section>
     </body>
 </html>
