@@ -17,28 +17,28 @@
         <nav class="navbar">
             <div class="personal_logo">Alex </div>
             <ul class="nav__link--list">
-                <li>
+                <li class="nav__link">
                     <a href="#" class="
                             nav__link--anchor
                             link__hover-effect
                             link__hover--black
                             "> Education </a>
                 </li>
-                <li>
+                <li class="nav__link">
                     <a href="#" class="
                             nav__link--anchor
                             link__hover-effect
                             link__hover--black
                             "> Skills </a>
                 </li>
-                <li>
+                <li class="nav__link">
                     <a href="#" class="
                             nav__link--anchor
                             link__hover-effect
                             link__hover--black
                             "> Projects </a>
                 </li>
-                <li>
+                <li class="nav__link">
                     <a href="#" class="
                             nav__link--anchor
                             nav__link--anchor-primary
@@ -68,7 +68,7 @@
 
                     </p>
                     <div class="about-me__links">
-                        <a href="www.linkedin.com/in/anh010" class="about-me__link">
+                        <a href="https://www.linkedin.com/in/anh010" class="about-me__link">
                             <i class="fa-brands fa-linkedin" style="color: #124559;"></i>
                         </a>
                         <a href="https://github.com/anh010" class="about-me__link">
@@ -100,18 +100,24 @@
                             University of California: San Diego, La Jolla, CA<br>
                             Bachelor of Science in Computer Engineering, June 2023
                         </p>
-                        <figure class="education__img--container">
-                            <img class="education__img" src="public/images/ucsd.png">
-                        </figure>
+                        <div class="education__mobile-con">
+                            <figure class="education__img--container">
+                                <img class="education__img" src="public/images/ucsd.png">    
+                            </figure>
+                            <p class="education__para-mob"> B.S Computer Engineering, 2023</p>
+                        </div>
                     </div>
                     <div class="education__school">
                         <p class="education__para">
                             Imperial Valley College, Imperial, CA<br>
                             Associate of Science in Mathematics, June 2020
                         </p>
-                        <figure class="education__img--container">
-                            <img class="education__img" src="public/images/ivc.png">
-                        </figure>
+                        <div class="education__mobile-con">
+                            <figure class="education__img--container">
+                                <img class="education__img" src="public/images/ivc.png">    
+                            </figure>
+                            <p class="education__para-mob"> A.A. Mathematics, 2020 </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -306,17 +312,53 @@
         <div class="container">
             <div class="row">
                 <h1 class="section__title">Contact Me</h1>
-                <form action="https://formsubmit.co/alexhernandezp9115@gmail.com" method="POST">
-                    <input type="hidden" name="_subject" value="New contact!">
-                    <input type="text" name="Name" placeholder="Name" required><br>
-                    <input type="email" name="Email" placeholder="Email" required><br>
-                    <textarea name="Message" placeholder="Message"></textarea><br>
-
-                    <button type="submit">Send</button>
-                </form>
+                <div class="contactme__form">
+                    <form action="https://formsubmit.co/alexhernandezp9115@gmail.com" method="POST">
+                        <input class=contactme__form--input type="hidden" name="_subject" value="New contact!">
+                        <input class=contactme__form--input type="text" name="Name" placeholder="Name" required><br>
+                        <input  class=contactme__form--input type="email" name="Email" placeholder="Email" required><br>
+                        <textarea  class=contactme__form--input  name="Message" placeholder="Message"></textarea><br>
+                        <button class="
+                            nav__link--anchor
+                            nav__link--anchor-primary
+                            type="submit">Send</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="row footer__row">
+            <a href="#">
+                <figure class="footer__logo">
+                    <img src="" alt="">
+                </figure>
+            </a>
+            <div class="footer__social--list">
+                <a href="" target="_blank" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white
+                ">Github</a>
+                <a href="" target="_blank" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white
+                ">Linkedin</a>
+                <a href="" target="_blank" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white
+                ">Email</a>
+                <a href="./public/files/resume Alex Hernandez Perez.pdf" target="_blank" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white
+                ">Resume</a>
+            </div>
+            <div class="footer__copyright">Copyright © 2023 Alex Hernandez Perez</div>
+        </div>
+    </footer>
 </body>
 
 </html>
