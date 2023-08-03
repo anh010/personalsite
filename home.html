@@ -1,118 +1,322 @@
 <!DOCTYPE html>
-<html lang ="en">
-    <head>
-        <!-- head definitions go here -->
-        <title>Alex Hernandez</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
+<html lang="en">
+
+<head>
+    <!-- head definitions go here -->
+    <title>Alex Hernandez</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/c993cc9c92.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- about me landing  -->
+    <section id="about_me">
         <!-- naviagtion bar -->
-        <section id="about_me">
-            
-            <nav class="navbar"> 
-                <div class="personal_logo">Alex </div>
-                <ul class="nav__link--list">
-                    <li>
-                        <a href="#" class="
+        <nav class="navbar">
+            <div class="personal_logo">Alex </div>
+            <ul class="nav__link--list">
+                <li>
+                    <a href="#" class="
                             nav__link--anchor
                             link__hover-effect
                             link__hover--black
                             "> Education </a>
-                    </li>
-                    <li>
-                        <a href="#" class="
+                </li>
+                <li>
+                    <a href="#" class="
                             nav__link--anchor
                             link__hover-effect
                             link__hover--black
                             "> Skills </a>
-                    </li>
-                    <li>
-                        <a href="#" class="
+                </li>
+                <li>
+                    <a href="#" class="
                             nav__link--anchor
                             link__hover-effect
                             link__hover--black
-                            "> Projects </a>  
-                    </li>
-                    <li>
-                        <a href="#" class="
+                            "> Projects </a>
+                </li>
+                <li>
+                    <a href="#" class="
                             nav__link--anchor
                             nav__link--anchor-primary
                             "> Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class=" flex flex-1">
+            <div class="about-me__info row">
+                <div class="about-me__info--container">
+                    <figure class="about-me__picture--mask">
+                        <img src="public/images/me.png" class="about-me__picture" alt="picture of me">
+                    </figure>
+                    <h1 class="about-me__info-title">Hello! <span class="text--color2">I'm Alex Hernandez Perez</span>
+                    </h1>
+
+                    <p class="about-me__info-para">
+                        I'm a recent Computer Engineering graduate from UCSD. With a strong skill set in
+                        simple web development and digital design using System Verilog ready
+                        to make a mark in the industry. Seeking an entry-level position, I bring a fresh perspective and
+                        a
+                        passion for innovative solutions. With a solid foundation in computer engineering, being
+                        knowledgeable in many
+                        technologies (see skills) Im ready to contribute to any project. Harness my knowledge and
+                        enthusiasm to drive
+                        your team's success and take your organization to new heights!
+
+                    </p>
+                    <div class="about-me__links">
+                        <a href="www.linkedin.com/in/anh010" class="about-me__link">
+                            <i class="fa-brands fa-linkedin" style="color: #124559;"></i>
+                        </a>
+                        <a href="https://github.com/anh010" class="about-me__link">
+                            <i class="fa-brands fa-github" style="color: #124559;"></i>
+                        </a>
+                        <a href="" class="about-me__link">
+                            <i class="far fa-envelope" style="color: #124559;"></i>
+                        </a>
+                        <a href="" class="about-me__link">
+                            <i class="fas fa-file-pdf" style="color: #124559;"></i>
+                        </a>
+                    </div>
+                    <figure class="about-me__img--container">
+                        <img class="about-me__img" src="public/images/undraw_developer_activity_re_39tg.svg">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- education section  -->
+    <section id="education">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">Education</h1>
+                <div class="education__list">
+                    <div class="education__school">
+                        <p class="education__para">
+                            University of California: San Diego, La Jolla, CA<br>
+                            Bachelor of Science in Computer Engineering, June 2023
+                        </p>
+                        <figure class="education__img--container">
+                            <img class="education__img" src="public/images/ucsd.png">
+                        </figure>
+                    </div>
+                    <div class="education__school">
+                        <p class="education__para">
+                            Imperial Valley College, Imperial, CA<br>
+                            Associate of Science in Mathematics, June 2020
+                        </p>
+                        <figure class="education__img--container">
+                            <img class="education__img" src="public/images/ivc.png">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Skill section   -->
+    <section id="skills">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">Technical Skills</h1>
+                <div class="language__list">
+                    <div class="language">
+                        <figure class="langauge__img--container">
+                            <img src="public/images/html.png" alt="HTML LOGO" class="language__img">
+                        </figure>
+                        <span class="language__name">HTML</span>
+                    </div>
+                    <div class="language">
+                        <figure class="langauge__img--container">
+                            <img src="public/images/css.png" alt="CSS LOGO" class="language__img">
+                        </figure>
+                        <span class="language__name">CSS</span>
+                    </div>
+                    <div class="language">
+                        <figure class="langauge__img--container">
+                            <img src="public/images/js.png" id="js" alt="JS LOGO" class="language__img">
+                        </figure>
+                        <span class="language__name">JavaScript/NodeJS</span>
+                    </div>
+                    <div class="language">
+                        <figure class="langauge__img--container">
+                            <img src="public/images/SystemVerilog.svg" alt="SV" class="language__img">
+                        </figure>
+                        <span class="language__name">SystemVerilog</span>
+                    </div>
+                    <div class="language">
+                        <figure class="langauge__img--container">
+                            <img src="public/images/java.png" alt="JAVA LOGO" class="language__img">
+                        </figure>
+                        <span class="language__name">Java</span>
+                    </div>
+                    <div class="language">
+                        <figure class="langauge__img--container">
+                            <img src="public/images/python.png" alt="PYTHON LOGO" class="language__img">
+                        </figure>
+                        <span class="language__name">Python</span>
+                    </div>
+                    <div class="language">
+                        <figure class="langauge__img--container">
+                            <img src="public/images/cpplus.png" alt="" class="language__img">
+                        </figure>
+                        <span class="language__name">C++</span>
+                    </div>
+                    <div class="language">
+                        <figure class="langauge__img--container">
+                            <img src="public/images/git.png" alt="" class="language__img">
+                        </figure>
+                        <span class="language__name">Git/Linux</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Project section  -->
+    <section id="Projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">Projects</h1>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="public/images/frugal.png" alt="Frugal APP" class="project__img">
+                            <div class="project__description">
+                                <h3 class="project__description--title"> Frugal Web App
+
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JS, Jest/Puppeteer, GitHub Actions
+                                </h4>
+                                <p class="project__description--para">
+                                    Developed a frugal web application that helps users track expenses and find
+                                    cost-saving
+                                    opportunities in the span of 7 weeks, with a team of 10 members.
+                                    Designed and implemented the CI/CD pipeline using GitHub Actions to streamline the
+                                    software development workflow, using Jest/pupper for E2E testing.
+                                    Automated build, runs 3 unit test suites, and deployment processes, improving
+                                    development efficiency.
+                                    Integrated over 3 code quality checks to maintain high software standards, such as
+                                    style
+                                    formats that the team decided on, and linting code to remove mistakes.
+                                    Collaborated closely with the 2 team members to troubleshoot and resolve CI/CD
+                                    pipeline
+                                    issues.
+                                    Reported and documented weekly progress updates to 3 team leads, documented key
+                                    architectural decision records
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/cse110-fa22-group8/cse110-fa22-group8" class="project__description--link" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://cse110-fa22-group8.github.io/cse110-fa22-group8/source/main/create_account/create_account.html" class="project__description--link" target="_blank">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="public/images/frugal.png" alt="Frugal APP" class="project__img">
+                            <div class="project__description">
+                                <h3 class="project__description--title"> Simple MicroProcessor
+
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JS, Jest/Puppeteer, GitHub Actions
+                                </h4>
+                                <p class="project__description--para">
+                                    Developed a frugal web application that helps users track expenses and find
+                                    cost-saving
+                                    opportunities in the span of 7 weeks, with a team of 10 members.
+                                    Designed and implemented the CI/CD pipeline using GitHub Actions to streamline the
+                                    software development workflow, using Jest/pupper for E2E testing.
+                                    Automated build, runs 3 unit test suites, and deployment processes, improving
+                                    development efficiency.
+                                    Integrated over 3 code quality checks to maintain high software standards, such as
+                                    style
+                                    formats that the team decided on, and linting code to remove mistakes.
+                                    Collaborated closely with the 2 team members to troubleshoot and resolve CI/CD
+                                    pipeline
+                                    issues.
+                                    Reported and documented weekly progress updates to 3 team leads, documented key
+                                    architectural decision records
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/cse110-fa22-group8/cse110-fa22-group8" class="project__description--link" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://cse110-fa22-group8.github.io/cse110-fa22-group8/source/main/create_account/create_account.html" class="project__description--link" target="_blank">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="public/images/frugal.png" alt="Frugal APP" class="project__img">
+                            <div class="project__description">
+                                <h3 class="project__description--title"> work in progress
+
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JS, Jest/Puppeteer, GitHub Actions
+                                </h4>
+                                <p class="project__description--para">
+                                    Developed a frugal web application that helps users track expenses and find
+                                    cost-saving
+                                    opportunities in the span of 7 weeks, with a team of 10 members.
+                                    Designed and implemented the CI/CD pipeline using GitHub Actions to streamline the
+                                    software development workflow, using Jest/pupper for E2E testing.
+                                    Automated build, runs 3 unit test suites, and deployment processes, improving
+                                    development efficiency.
+                                    Integrated over 3 code quality checks to maintain high software standards, such as
+                                    style
+                                    formats that the team decided on, and linting code to remove mistakes.
+                                    Collaborated closely with the 2 team members to troubleshoot and resolve CI/CD
+                                    pipeline
+                                    issues.
+                                    Reported and documented weekly progress updates to 3 team leads, documented key
+                                    architectural decision records
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/cse110-fa22-group8/cse110-fa22-group8" class="project__description--link" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://cse110-fa22-group8.github.io/cse110-fa22-group8/source/main/create_account/create_account.html" class="project__description--link" target="_blank">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                 </ul>
-                </nav>
-            <!-- about section  -->
-        </section>
-        <section>
-                <h1> Hello! I'm Alex Hernandez Perez</h1>
-                 <!-- <img src"" alt="picture of me"> -->
-                <p> I'm a recent Computer Engineering graduate from UCSD. With a strong skill set in 
-                    simple web development and digital design using System Verilog ready 
-                    to make a mark in the industry. Seeking an entry-level position, I bring a fresh perspective and a 
-                    passion for innovative solutions. With a solid foundation in computer engineering, being knowledgeable in many 
-                    technologies (see skills) Im ready to contribute to any project. Harness my knowledge and enthusiasm to drive 
-                    your team's success and take your organization to new heights!</p>
-                    <!-- table of images here for later -->
-                <table>
-                    <tr>
-                        <td>linkin account here</td>
-                        <td>git hub account here </td>
-                        <td> mail contact here</td> 
-                    </tr>
-                </table>
-        </section>
-        <!-- education section  -->
-        <section> 
-                <h1>Education</h1>
-                <div> University of California: San Diego, La Jolla, CA<br>
-                Bachelor of Science in Computer Engineering, June 2023 </div><br>
-                <div> Imperial Valley College, Imperial, CA<br>
-                    Associate of Science in Mathematics, June 2020 </div>
-        </section>
-        <!--Skill section   -->
-        <section> 
-            <h1>Skills</h1>
-            <table>
-                <tr>
-                    <td> HTML </td>
-                    <td> CSS </td>
-                    <td> JavaScript </td>
-                </tr>
-                <tr>
-                    <td> Java </td>
-                    <td> Python </td>
-                    <td> SystemVerilog </td>    
-                </tr>
+            </div>
+        </div>
+    </section>
+    <!-- Contact me section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">Contact Me</h1>
+                <form action="https://formsubmit.co/alexhernandezp9115@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New contact!">
+                    <input type="text" name="Name" placeholder="Name" required><br>
+                    <input type="email" name="Email" placeholder="Email" required><br>
+                    <textarea name="Message" placeholder="Message"></textarea><br>
 
-            </table>
-        </section>
-        <!--Project section  -->
-        <section> 
-            <h1>Projects</h1>
-            <table>
-                <tr>
-                    <td> <div>Frugal <br> a simple financial tracking application
-                    <br> demo source   </div> </td>
-                    <td> <div>MicroProcessor <br> simple Microprocessor 
-                        design in SystemVerilog and define an Instruction Set Architecture (ISA) 
-                        for the processor. </div> </td>
-                    <td> Work In Progress </td>
-                </tr>
-            </table>
-        </section>
-        <!-- Contact me section -->
-        <section> 
-            <h1>Contact Me</h1>
-            <form action="https://formsubmit.co/alexhernandezp9115@gmail.com" method="POST">
-                <input type="hidden" name="_subject" value="New contact!">
-                <input type="text"  name="Name"  placeholder="Name" required><br>
-                <input type="email" name="Email" placeholder="Email" required><br>
-                <textarea name="Message" placeholder="Message"></textarea><br>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
 
-                <button type="submit">Send</button>
-           </form> 
-        </section>
-    </body>
 </html>
