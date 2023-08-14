@@ -77,6 +77,11 @@ p{
 a {
     text-decoration: none;
     position: relative;
+    transition: opacity 300ms ease;
+}
+
+i:hover {
+    opacity: 0.7;
 }
 body {
     background-color: var(--color4)
@@ -144,6 +149,8 @@ nav{
     margin: 0 auto;
 
 }
+
+
 .about-me__picture--mask{
     width: 100px;
     height: 100px;
@@ -151,6 +158,24 @@ nav{
     overflow: hidden;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
     margin-bottom: 25px;
+    /* backwards fixes issue apearing before animation */
+    /* 1st num is length of animation , 2nd is delay */
+    animation: animate-pfp 800ms 200ms backwards;
+}
+
+
+@keyframes animate-pfp{
+    0%{
+        transform: scale(0);
+    }
+     80%{
+        transform: scale(1.1);
+
+     }
+     100% {
+        transform: scale(1);
+     }
+
 }
 
 .about-me__picture{
@@ -161,16 +186,36 @@ nav{
 }
 .about-me__info-title{
     margin-bottom: 20px;
+    animation: fade-up 600ms 400ms backwards;
 }
 .about-me__info-para{
     font-size: 20px;
     margin-bottom: 28px;
+    animation: fade-up 600ms 600ms backwards;
+
 }
 .about-me__link{
-
     font-size: 20px;
     padding: 0 16px;
+
 }
+.about-me__links{
+    animation: fade-up 600ms 800ms backwards;
+
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
 .about-me__img--container{
     flex:1;
     display: flex;
@@ -179,6 +224,17 @@ nav{
 .about-me__img{
     padding: 5%;
     width: 100%;
+    animation: fade-in 1200ms 800ms backwards;
+}
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* EDUCATION section css */
