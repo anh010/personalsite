@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 :root{
-    --color1: #598392;
-    --color2: #124559;
-    --color3: #01161E;
-    --color4: #EFF6E0;
+    --color1: DeepSkyBlue;
+    --color2: #00158f;
+    --color3: rgb(0, 0, 91);
+    --color4: AliceBlue;
 }
 * {
     margin:0;
@@ -161,6 +161,10 @@ nav{
     /* backwards fixes issue apearing before animation */
     /* 1st num is length of animation , 2nd is delay */
     animation: animate-pfp 800ms 200ms backwards;
+}
+
+.fa-brands, .far,.fas{
+    color: var(--color2)
 }
 
 
